@@ -1,0 +1,50 @@
+StereoShutter - licence
+
+Copyright (C) 2026 murdavs. All rights reserved.
+
+StereoShutter (the program: StereoShutter.exe and the files that come with it) is the work of
+its author and is protected by copyright. It is offered free of charge under the terms below.
+By using or copying the program you accept them; if you do not accept them, do not use or
+copy it.
+
+1. Use. You may install and use the program on any number of computers.
+
+2. Copies. You may give the program to others, but only as the complete package it came in,
+   unchanged, free of charge, and with this file and StereoShutter_THIRD_PARTY.txt included.
+   You may not sell it, rent it, or bundle it with anything that is sold.
+
+3. What you may not do. You may not modify, translate, adapt, decompile, disassemble or
+   reverse engineer the program, or make works derived from it, except to the extent that the
+   law of your country allows it regardless of this licence (for instance, to make it work
+   with other software). You may not remove or alter the copyright notices in the program or
+   in its files.
+
+4. Source code. The program's source code is not published. It remains the author's.
+
+5. Third-party material and names. The program uses material from others under terms of
+   their own, listed in StereoShutter_THIRD_PARTY.txt; those terms are not changed by this
+   file. NVIDIA, 3D Vision and LightBoost are trademarks of NVIDIA Corporation, named only to
+   say what the program works with: the program is not made, supported or endorsed by NVIDIA.
+
+6. No warranty. THE PROGRAM IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+   PARTICULAR PURPOSE AND NONINFRINGEMENT. The program drives shutter glasses and their USB
+   emitter, changes the monitor's brightness and Windows' HDR setting while it runs, and, on
+   3D Vision monitors, tries a display timing (LightBoost). Its LightBoost tools for NVIDIA
+   Surround, when you run them, turn NVIDIA Surround off and on again and save or delete a
+   custom resolution in NVIDIA's driver; any change of that kind can hang or restart the
+   computer. The program drives the monitor at its
+   maximum brightness, and with HDR output at more than the desktop's brightness, for as long
+   as it runs, which wears an OLED panel more than desktop use and can leave marks (burn-in),
+   as any HDR game can; the README explains it. You use it at your own risk,
+   on your own monitor.
+
+7. Limitation of liability. TO THE EXTENT PERMITTED BY LAW, IN NO EVENT SHALL THE AUTHOR BE
+   LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+   OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE PROGRAM OR ITS USE. Nothing in
+   this licence limits rights that the law of your country gives you and that cannot be
+   waived.
+
+8. Term. This licence ends by itself if you break its terms; you must then delete every copy
+   of the program you have. The author may offer other versions of the program under other
+   terms.

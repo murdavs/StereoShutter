@@ -1,0 +1,170 @@
+StereoShutter - third-party material
+
+StereoShutter itself is Copyright (C) 2026 murdavs, all rights reserved (StereoShutter_LICENSE.txt).
+The material below is used under terms of its own, which this file keeps with the program.
+
+1. NVIDIA NVAPI SDK (https://github.com/NVIDIA/nvapi)
+
+   nvapi_min.h declares, with names of its own, the few NVAPI structures, constants and function
+   ids the program uses: for LightBoost, tried while it runs or saved as a custom resolution for
+   NVIDIA Surround (NV_TIMING, NV_TIMINGEXT, NV_TIMING_INPUT, NV_CUSTOM_DISPLAY, NV_VIEWPORTF,
+   NV_MOSAIC_TOPO_BRIEF, NV_MOSAIC_DISPLAY_SETTING), for reading NVIDIA Surround's grids and
+   setting them again (NV_MOSAIC_GRID_TOPO_V2 and its display entries, and the flags of
+   NvAPI_Mosaic_SetDisplayGrids), for
+   NVIDIA Reflex on the program's own device (NV_SET_SLEEP_MODE_PARAMS, NV_GET_SLEEP_STATUS_PARAMS,
+   NV_LATENCY_MARKER_PARAMS, NV_LATENCY_RESULT_PARAMS), for reading the driver's global settings
+   (NVDRS_SETTING, NVDRS_BINARY_SETTING and the setting ids and values of vertical sync, power
+   management, G-SYNC, frame rate limits and low latency mode), for reading the display's HDR
+   state (NV_HDR_COLOR_DATA and its modes), and the nvapi_QueryInterface ids of the calls used.
+   Their layouts and values are those of the SDK's nvapi.h,
+   NvApiDriverSettings.h and nvapi_interface.h; tests/nvapi_layout_check.cpp checks them against
+   the SDK. No SDK file and none of its libraries are part of StereoShutter: the functions are
+   those of the nvapi64.dll that NVIDIA's driver installs.
+
+   SPDX-FileCopyrightText: Copyright (c) 2019-2026 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+   SPDX-License-Identifier: MIT
+
+   Permission is hereby granted, free of charge, to any person obtaining a
+   copy of this software and associated documentation files (the "Software"),
+   to deal in the Software without restriction, including without limitation
+   the rights to use, copy, modify, merge, publish, distribute, sublicense,
+   and/or sell copies of the Software, and to permit persons to whom the
+   Software is furnished to do so, subject to the following conditions:
+
+   The above copyright notice and this permission notice shall be included in
+   all copies or substantial portions of the Software.
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+   THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+   FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+   DEALINGS IN THE SOFTWARE.
+
+2. NVIDIA's 3D Vision table (read from the registry; no copy of it comes with the program)
+
+   The monitor and glasses timings of NVIDIA 3D Vision displays are NVIDIA's: the registry
+   table that NVIDIA's own USB emitter driver writes when it is installed (nvstusb.inf of the
+   3D Vision packages; HKLM\SYSTEM\CurrentControlSet\Services\NvStUSB\Parameters, one subkey
+   per monitor, one value per display mode, the glasses' times in 12 MHz ticks). The program
+   reads it there, on the user's own computer, where that driver (which the
+   program needs anyway to reach the emitter) put it; nothing of it is distributed. The user
+   may put a JSON copy of the table next to the program (StereoShutter_nvtimings.json, [Monitor]
+   nvidia_table); it is optional, and only adds monitors the registry table does not have.
+
+3. Read to understand, nothing copied
+
+   StereoShutter's code is its own. These were read to understand the emitter, LightBoost and the
+   timing of the output; no code of theirs is in StereoShutter:
+   - 3DVisionActivator (BSL-1.0) and libnvstusb (LGPL-3): the emitter's USB protocol; and
+     3DVisionActivator, how the timing of NVIDIA's table puts a 3D Vision monitor in its 3D
+     mode.
+   - NVIDIA's CustomTiming sample in the NVAPI SDK (MIT, point 1): the order of the calls that
+     save a custom resolution (try it, save it, take the trial back), which
+     StereoShutter_LightBoost_Surround_Setup follows.
+   - The documents of nv3d-vision-restoration (GPL-3): the emitter firmware's behaviour; and
+     its code, to see how it does HDR output (an FP16 scRGB swap chain, a gain that never
+     lights the black frames). StereoShutter's HDR pass (hdr_output.cpp) is written from scratch.
+   - Kodi's pull request 26096 (GPL): only the fact that since Windows 11 24H2 Windows HDR is
+     read and switched with DisplayConfig's GET_ADVANCED_COLOR_INFO_2 and SET_HDR_STATE.
+
+4. Windows' DisplayConfig declarations for HDR on Windows 11 24H2 and later
+
+   display.cpp declares, with its own names, DISPLAYCONFIG_GET_ADVANCED_COLOR_INFO_2 and
+   DISPLAYCONFIG_SET_HDR_STATE and their three constants, which the headers this program is
+   built with do not have yet. Their layouts and values are those of Windows' SDK (wingdi.h),
+   as in mingw-w64's copy of it; static_asserts check the sizes.
+
+5. Published standards (formulas and constants only)
+
+   hdr_logic.h, hdr_output.cpp and eye_pass.cpp use the formulas and constants of SMPTE ST 2084
+   (the PQ curve of HDR10), ITU-R BT.2087 (BT.709 <-> BT.2020 colours) and IEC 61966-2-1
+   (sRGB), as published. No code was copied.
+
+6. MinHook
+
+   StereoShutter_host.dll includes MinHook, by Tsuda Kageyu, with the instruction decoder that comes
+   with it (HDE32 and HDE64, by Vyacheslav Patkov). Their notices follow.
+
+MinHook
+Copyright (C) 2009-2017 Tsuda Kageyu.
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
+TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER
+OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+================================================================================
+Portions of this software are Copyright (c) 2008-2009, Vyacheslav Patkov.
+================================================================================
+HDE32 C
+Copyright (c) 2008-2009, Vyacheslav Patkov.
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
+TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE REGENTS OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+-------------------------------------------------------------------------------
+HDE64 C
+Copyright (c) 2008-2009, Vyacheslav Patkov.
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
+TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE REGENTS OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.

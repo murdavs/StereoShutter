@@ -1,0 +1,25 @@
+# StereoShutter's repository holds the documentation; the program itself is published as a
+# Release (StereoShutter-x.y.z.zip), not in the repository.
+*.exe
+*.dll
+*.zip
+*.pdb
+# Files a run of the program writes next to it
+StereoShutter_reports/
+StereoShutter_monitors.json*
+StereoShutter_lightboost_pending.json
+StereoShutter_lightboost_surround.json
+StereoShutter_host.log
+StereoShutter_feedback/
+StereoShutter_diagnostic.json
+StereoShutter.ini.*.bak
+*.log
+*.new
+*.previous
+# NVIDIA's table is never published (users may keep their own copy next to the program)
+StereoShutter_nvtimings.json
+nvtimings.json
+# Windows and editor leftovers
+Thumbs.db
+desktop.ini
+.DS_Store
