@@ -121,7 +121,7 @@ The manual explains each step: `StereoShutter/StereoShutter_Manual_EN.pdf` (in S
 
 > ⚠️ **Not recommended for online multiplayer or games protected by anti-cheat.** 3D fixes get into the game (DLL files and hooks), and anti-cheat systems may block them or sanction the account. Closing StereoShutter does not remove what is installed in the game's folder.
 
-- Needs Windows 10 or 11, 64-bit, an NVIDIA graphics card ([which one](https://github.com/murdavs/StereoShutter#which-graphics-card)), and NVIDIA 3D Vision glasses with their USB emitter and NVIDIA's emitter driver (not included), or Samsung SSG-5100GB glasses with a TP-Link UB500 adapter and TP-Link's driver (not included) on an OLED monitor at 240 or 360 Hz.
+- Needs Windows 10 or 11, 64-bit, an NVIDIA graphics card ([which one](https://github.com/murdavs/StereoShutter/blob/main/docs/STEREOSHUTTER_GUIDE.md#which-graphics-card)), and NVIDIA 3D Vision glasses with their USB emitter and NVIDIA's emitter driver (not included), or Samsung SSG-5100GB glasses with a TP-Link UB500 adapter and TP-Link's driver (not included) on an OLED monitor at 240 or 360 Hz.
 - Games need their own 3D fix. The Player needs **VLC media player 3, 64-bit**, installed (not included; VLC 4 is not supported).
 - At 99–185 Hz, turn on the monitor's own strobing (ELMB, ULMB, DyAc…): without it there is a ghost image. From 198 Hz StereoShutter puts the black refresh between the eyes itself.
 - The programs are not digitally signed.
