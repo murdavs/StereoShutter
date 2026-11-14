@@ -1,19 +1,32 @@
 <div align="center">
 
-# StereoShutter — PC gaming in geometric 3D
+<a href="docs/banner.png"><img src="docs/banner.png" alt="StereoShutter — 3D games, films and photos on OLED and 3D Vision monitors, with HDR and LightBoost" width="100%"></a>
 
-**StereoShutter Manager 0.1.116 · StereoShutter 0.18.111.209**
+<h1>StereoShutter — 3D gaming, video and photos</h1>
 
-Bring your NVIDIA 3D Vision glasses back to life, use supported Samsung TV glasses,
-or choose the 3D output your display needs.
+**Geometric 3D games, 3D films, Blu-ray 3D and 3D photos.<br>NVIDIA 3D Vision and supported Samsung TV glasses (experimental), OLED with HDR, LightBoost and NVIDIA Surround.**
 
-### [Download StereoShutter Manager](https://github.com/murdavs/StereoShutter/releases/latest/download/StereoShutterManager.zip)
+[![Manager](https://img.shields.io/badge/Manager-0.1.116-2ea44f)](MANAGER_RELEASE_NOTES.md)
+[![StereoShutter](https://img.shields.io/badge/StereoShutter-0.18.111.209-2ea44f)](RELEASE_NOTES.md)
+[![Player](https://img.shields.io/badge/Player-1.0.4-2ea44f)](docs/STEREOSHUTTER_GUIDE.md#stereoshutter-player)
+[![Photos](https://img.shields.io/badge/Photos-1.0.3-2ea44f)](docs/STEREOSHUTTER_GUIDE.md#stereoshutter-photos)
+
+[![Latest release](https://img.shields.io/github/v/release/murdavs/StereoShutter?label=release&color=2ea44f)](https://github.com/murdavs/StereoShutter/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/murdavs/StereoShutter/total?color=2ea44f)](https://github.com/murdavs/StereoShutter/releases)
+![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-31363B?logo=windows&logoColor=76B900)
+![GPU](https://img.shields.io/badge/GPU-NVIDIA-76B900?logo=nvidia&logoColor=white)
+![OLED](https://img.shields.io/badge/OLED-240%20%2F%20360%20Hz-76B900)
+![HDR](https://img.shields.io/badge/HDR-scRGB%20%C2%B7%20HDR10-76B900)
+![3D Vision](https://img.shields.io/badge/3D%20Vision-LightBoost%20%C2%B7%20Surround-76B900)
+![Licence](https://img.shields.io/badge/licence-freeware-31363B)
+
+### [⬇️ Download StereoShutter Manager 0.1.116](https://github.com/murdavs/StereoShutter/releases/latest/download/StereoShutterManager.zip)
 
 **Recommended:** find your games, install compatible 3D fixes and configure your display from one free application.
 
-[Download standalone StereoShutter](https://github.com/murdavs/StereoShutter/releases/latest/download/StereoShutter.zip) · [Release details](https://github.com/murdavs/StereoShutter/releases/latest) · [What’s new](WHATS_NEW.md)
+[⬇️ Standalone StereoShutter 0.18.111.209](https://github.com/murdavs/StereoShutter/releases/latest/download/StereoShutter.zip) · [Release details](https://github.com/murdavs/StereoShutter/releases/latest) · [What’s new](WHATS_NEW.md) · [Changelog](CHANGELOG.md)
 
-[Discord community](https://discord.gg/J6dgWXhAPy) · [Website](https://www.stereoshutter.com) · [YouTube](https://www.youtube.com/@stereoshutter) · [Support development](https://ko-fi.com/stereoshutter)
+[🌐 Website](https://www.stereoshutter.com) · <a href="https://discord.gg/J6dgWXhAPy"><img src="docs/icons/discord.svg" height="18" alt=""> Discord community</a> · [▶ YouTube](https://www.youtube.com/@stereoshutter) · <a href="https://ko-fi.com/stereoshutter"><img src="docs/icons/kofi.png" height="18" alt=""> Support on Ko-fi</a>
 
 </div>
 
@@ -21,7 +34,9 @@ Discord is optional: both applications download directly from GitHub.
 This release contains **two independent ZIPs**. Choose Manager for the integrated workflow,
 or standalone StereoShutter for manual geo-11 integration, Player and Photos.
 
-[Get started](#get-started-with-manager) · [Applications](#what-each-application-does) · [Your display](#your-display-and-glasses) · [Games](#games-and-fixes) · [Manuals](#manuals-and-help)
+[🧩 Get started](#get-started-with-manager) · [Applications](#what-each-application-does) · [🕶️ Your display](#your-display-and-glasses) · [🎮 Games](#games-and-fixes) · [☀️ HDR, films and photos](#hdr-films-and-photos) · [📖 Manuals](#manuals-and-help)
+
+**Detailed guides:** [Tools](docs/STEREOSHUTTER_GUIDE.md#the-tools) · [Display modes](docs/STEREOSHUTTER_GUIDE.md#display-modes) · [Stability](docs/STEREOSHUTTER_GUIDE.md#game-pacing-and-automatic-stability) · [Samsung glasses](docs/STEREOSHUTTER_GUIDE.md#samsung-ssg-5100gb-glasses) · [Multiplayer safety](docs/STEREOSHUTTER_GUIDE.md#multiplayer-and-anti-cheat) · [Reporting a problem](docs/STEREOSHUTTER_GUIDE.md#reporting-a-problem) · [FAQ](docs/STEREOSHUTTER_GUIDE.md#faq) · [Credits](docs/STEREOSHUTTER_GUIDE.md#acknowledgements)
 
 ## What each application does
 
@@ -29,8 +44,8 @@ or standalone StereoShutter for manual geo-11 integration, Player and Photos.
 |---|---|
 | **StereoShutter Manager** | Finds games, installs and updates compatible fixes, manages backups, configures supported outputs and glasses, and opens Player and Photos. The Manager is free. |
 | **StereoShutter Engine** | Our DirectX 12 geometric 3D engine. It comes inside each of our game-specific fixes, not as a universal switch for every DX12 game. |
-| **StereoShutter** | Displays the left and right views and synchronizes supported shutter glasses. It works with current NVIDIA graphics drivers without the discontinued 3D Vision graphics driver. |
-| **Player and Photos** | Play stereoscopic video and view stereoscopic photos through supported glasses. Included in the standalone ZIP and available through Manager. |
+| <img src="docs/icons/stereoshutter.png" width="32" alt=""><br>**StereoShutter** | Displays the left and right views and synchronizes supported shutter glasses. It works with current NVIDIA graphics drivers without the discontinued 3D Vision graphics driver. |
+| <img src="docs/icons/player.png" width="32" alt=""> <img src="docs/icons/photos.png" width="32" alt=""><br>**Player and Photos** | Play stereoscopic video and view stereoscopic photos through supported glasses. Included in the standalone ZIP and available through Manager. |
 
 A game needs a compatible fix that supplies its stereoscopic views.
 StereoShutter does not turn arbitrary 2D games into geometric 3D.
