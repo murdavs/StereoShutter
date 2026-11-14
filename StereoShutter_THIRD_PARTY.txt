@@ -84,8 +84,8 @@ The material below is used under terms of its own, which this file keeps with th
 
 6. MinHook
 
-   StereoShutter_host.dll includes MinHook, by Tsuda Kageyu, with the instruction decoder that comes
-   with it (HDE32 and HDE64, by Vyacheslav Patkov). Their notices follow.
+   StereoShutter_host.dll and StereoShutter_host32.dll include MinHook, by Tsuda Kageyu, with the
+   instruction decoder that comes with it (HDE64 and HDE32, by Vyacheslav Patkov). Their notices follow.
 
 MinHook
 Copyright (C) 2009-2017 Tsuda Kageyu.
