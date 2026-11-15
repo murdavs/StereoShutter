@@ -1,4 +1,4 @@
-# StereoShutter Manager 0.1.119
+# StereoShutter Manager 0.1.120
 
 [Download Manager](https://github.com/murdavs/StereoShutter/releases/latest/download/StereoShutterManager.zip) · [Release assets](https://github.com/murdavs/StereoShutter/releases/latest)
 
@@ -6,7 +6,12 @@ Manager is a free Windows 10/11 x64 application for finding installed games, man
 stereoscopic fixes, configuring supported 3D outputs and opening StereoShutter Player and Photos.
 It is supplied in its own ZIP, alongside standalone StereoShutter 0.18.111.209.
 
-## What changed since 0.1.116
+## What changed in 0.1.120
+
+- Fixed an installation error when adding StereoShutter to a game.
+- Improved verification when installing compatible HelixMod fixes.
+
+## Previous release: 0.1.119
 
 - Hide games from your library, add search folders and browse the available fixes.
 - Improved fix detection, downloads and preservation of your settings during updates.
@@ -40,4 +45,5 @@ sign-in; eligible early-access content uses the account system.
 See [the project overview](README.md) and `docs/USER_GUIDE.md` inside the Manager ZIP.
 The package also includes privacy information. The executable is unsigned; use the official release
 and its published SHA-256 when checking the download.
+
 
