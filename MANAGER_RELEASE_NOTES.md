@@ -1,4 +1,4 @@
-# StereoShutter Manager 0.1.121
+# StereoShutter Manager 0.1.122
 
 [Download Manager](https://github.com/murdavs/StereoShutter/releases/latest/download/StereoShutterManager.zip) · [Release assets](https://github.com/murdavs/StereoShutter/releases/latest)
 
@@ -6,7 +6,18 @@ Manager is a free Windows 10/11 x64 application for finding installed games, man
 stereoscopic fixes, configuring supported 3D outputs and opening StereoShutter Player and Photos.
 It is supplied in its own ZIP, alongside standalone StereoShutter 0.18.111.209.
 
-## What changed in 0.1.121
+## What changed in 0.1.122
+
+- Improved game recognition, cover images and duplicate handling.
+- Improved compatible HelixMod imports and fix updates while keeping your settings.
+- Easier account recovery after correcting the PC clock.
+- More complete support reports.
+
+## The Witcher 3: Wild Hunt — DirectX 12 fix 0.1.6
+
+Improved diagnostic logging to help identify issues.
+
+## Previous release: 0.1.121
 
 - Import compatible fixes directly from ZIP, 7z and RAR archives.
 - Improved game detection and missing cover artwork.
