@@ -6,7 +6,7 @@
 
 **Geometric 3D games, 3D films, Blu-ray 3D and 3D photos.<br>NVIDIA 3D Vision and supported Samsung TV glasses (experimental), OLED with HDR, LightBoost and NVIDIA Surround.**
 
-[![Manager](https://img.shields.io/badge/Manager-0.1.123-2ea44f)](MANAGER_RELEASE_NOTES.md)
+[![Manager](https://img.shields.io/badge/Manager-0.1.124-2ea44f)](MANAGER_RELEASE_NOTES.md)
 [![StereoShutter](https://img.shields.io/badge/StereoShutter-0.18.111.209-2ea44f)](RELEASE_NOTES.md)
 [![Player](https://img.shields.io/badge/Player-1.0.4-2ea44f)](docs/STEREOSHUTTER_GUIDE.md#stereoshutter-player)
 [![Photos](https://img.shields.io/badge/Photos-1.0.3-2ea44f)](docs/STEREOSHUTTER_GUIDE.md#stereoshutter-photos)
@@ -20,7 +20,7 @@
 ![3D Vision](https://img.shields.io/badge/3D%20Vision-LightBoost%20%C2%B7%20Surround-76B900)
 ![Licence](https://img.shields.io/badge/licence-freeware-31363B)
 
-### [⬇️ Download StereoShutter Manager 0.1.123](https://github.com/murdavs/StereoShutter/releases/latest/download/StereoShutterManager.zip)
+### [⬇️ Download StereoShutter Manager 0.1.124](https://github.com/murdavs/StereoShutter/releases/latest/download/StereoShutterManager.zip)
 
 **Recommended:** find your games, install compatible 3D fixes and configure your display from one free application.
 
@@ -74,7 +74,7 @@ do not mix files from different application versions.
 **Free features need no subscription.** Public fixes, general glasses configuration, Player and Photos
 can be used without signing in. An account is used for eligible early-access content and member features.
 
-[Manager 0.1.123 notes](MANAGER_RELEASE_NOTES.md) · [Detailed Manager workflow](docs/STEREOSHUTTER_GUIDE.md#stereoshutter-manager)
+[Manager 0.1.124 notes](MANAGER_RELEASE_NOTES.md) · [Detailed Manager workflow](docs/STEREOSHUTTER_GUIDE.md#stereoshutter-manager)
 
 ### Your library, across stores
 
