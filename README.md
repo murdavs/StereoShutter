@@ -6,7 +6,7 @@
 
 **Geometric 3D games, 3D films, Blu-ray 3D and 3D photos.<br>NVIDIA 3D Vision and supported Samsung TV glasses (experimental), OLED with HDR, LightBoost and NVIDIA Surround.**
 
-[![Manager](https://img.shields.io/badge/Manager-0.1.124-2ea44f)](MANAGER_RELEASE_NOTES.md)
+[![Manager](https://img.shields.io/badge/Manager-0.1.125-2ea44f)](MANAGER_RELEASE_NOTES.md)
 [![StereoShutter](https://img.shields.io/badge/StereoShutter-0.18.111.209-2ea44f)](RELEASE_NOTES.md)
 [![Player](https://img.shields.io/badge/Player-1.0.4-2ea44f)](docs/STEREOSHUTTER_GUIDE.md#stereoshutter-player)
 [![Photos](https://img.shields.io/badge/Photos-1.0.3-2ea44f)](docs/STEREOSHUTTER_GUIDE.md#stereoshutter-photos)
@@ -20,7 +20,7 @@
 ![3D Vision](https://img.shields.io/badge/3D%20Vision-LightBoost%20%C2%B7%20Surround-76B900)
 ![Licence](https://img.shields.io/badge/licence-freeware-31363B)
 
-### [⬇️ Download StereoShutter Manager 0.1.124](https://github.com/murdavs/StereoShutter/releases/latest/download/StereoShutterManager.zip)
+### [⬇️ Download StereoShutter Manager 0.1.125](https://github.com/murdavs/StereoShutter/releases/latest/download/StereoShutterManager.zip)
 
 **Recommended:** find your games, install compatible 3D fixes and configure your display from one free application.
 
@@ -34,6 +34,10 @@ Discord is optional: both applications download directly from GitHub.
 This release contains **two independent ZIPs**. Choose Manager for the integrated workflow,
 or standalone StereoShutter for manual geo-11 integration, Player and Photos.
 
+Manager includes the reviewed Public **StereoShutter RC20 (0.18.111.220)** and updated manuals.
+The standalone ZIP remains **0.18.111.209**, including Player and Photos.
+[Manual ES](https://github.com/murdavs/StereoShutter/releases/latest/download/StereoShutter_Manual_ES.pdf) · [Manual EN](https://github.com/murdavs/StereoShutter/releases/latest/download/StereoShutter_Manual_EN.pdf)
+
 [🧩 Get started](#get-started-with-manager) · [Applications](#what-each-application-does) · [🕶️ Your display](#your-display-and-glasses) · [🎮 Games](#games-and-fixes) · [☀️ HDR, films and photos](#hdr-films-and-photos) · [📖 Manuals](#manuals-and-help)
 
 **Detailed guides:** [Tools](docs/STEREOSHUTTER_GUIDE.md#the-tools) · [Display modes](docs/STEREOSHUTTER_GUIDE.md#display-modes) · [Stability](docs/STEREOSHUTTER_GUIDE.md#game-pacing-and-automatic-stability) · [Samsung glasses](docs/STEREOSHUTTER_GUIDE.md#samsung-ssg-5100gb-glasses) · [Multiplayer safety](docs/STEREOSHUTTER_GUIDE.md#multiplayer-and-anti-cheat) · [Reporting a problem](docs/STEREOSHUTTER_GUIDE.md#reporting-a-problem) · [FAQ](docs/STEREOSHUTTER_GUIDE.md#faq) · [Credits](docs/STEREOSHUTTER_GUIDE.md#acknowledgements)
@@ -43,7 +47,7 @@ or standalone StereoShutter for manual geo-11 integration, Player and Photos.
 | Product | What it does |
 |---|---|
 | **StereoShutter Manager** | Finds games, installs and updates compatible fixes, manages backups, configures supported outputs and glasses, and opens Player and Photos. The Manager is free. |
-| **StereoShutter Engine** | Our DirectX 12 geometric 3D engine. It comes inside each of our game-specific fixes, not as a universal switch for every DX12 game. |
+| **StereoShutter Engine** | Our geometric 3D engine for supported DirectX 9 and DirectX 12 games. It comes inside each game-specific fix. |
 | <img src="docs/icons/stereoshutter.png" width="32" alt=""><br>**StereoShutter** | Displays the left and right views and synchronizes supported shutter glasses. It works with current NVIDIA graphics drivers without the discontinued 3D Vision graphics driver. |
 | <img src="docs/icons/player.png" width="32" alt=""> <img src="docs/icons/photos.png" width="32" alt=""><br>**Player and Photos** | Play stereoscopic video and view stereoscopic photos through supported glasses. Included in the standalone ZIP and available through Manager. |
 
@@ -74,7 +78,7 @@ do not mix files from different application versions.
 **Free features need no subscription.** Public fixes, general glasses configuration, Player and Photos
 can be used without signing in. An account is used for eligible early-access content and member features.
 
-[Manager 0.1.124 notes](MANAGER_RELEASE_NOTES.md) · [Detailed Manager workflow](docs/STEREOSHUTTER_GUIDE.md#stereoshutter-manager)
+[Manager 0.1.125 notes](MANAGER_RELEASE_NOTES.md) · [Detailed Manager workflow](docs/STEREOSHUTTER_GUIDE.md#stereoshutter-manager)
 
 ### Your library, across stores
 

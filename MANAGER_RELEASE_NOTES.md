@@ -1,12 +1,19 @@
-# StereoShutter Manager 0.1.124
+# StereoShutter Manager 0.1.125
 
 [Download Manager](https://github.com/murdavs/StereoShutter/releases/latest/download/StereoShutterManager.zip) · [Release assets](https://github.com/murdavs/StereoShutter/releases/latest)
 
 Manager is a free Windows 10/11 x64 application for finding installed games, managing compatible
 stereoscopic fixes, configuring supported 3D outputs and opening StereoShutter Player and Photos.
-It is supplied in its own ZIP, alongside standalone StereoShutter 0.18.111.209.
+Its complete ZIP includes Public StereoShutter RC20 (0.18.111.220) and the updated ES/EN manuals.
+The separate standalone bundle remains 0.18.111.209, including Player and Photos.
 
-## What changed in 0.1.124
+## What changed in 0.1.125
+
+- Improve DX9 game detection and fix installation.
+- Update StereoShutter independently while preserving game settings and output.
+- Use one shared folder for the experimental DLSS 5 library.
+
+## Previous release: 0.1.124
 
 - Improve fix updates and recovery while preserving saved settings.
 - Correct StereoShutter setup with protected Engine fixes.
