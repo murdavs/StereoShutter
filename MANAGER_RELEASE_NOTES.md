@@ -1,4 +1,4 @@
-# StereoShutter Manager 0.1.125
+# StereoShutter Manager 0.1.126
 
 [Download Manager](https://github.com/murdavs/StereoShutter/releases/latest/download/StereoShutterManager.zip) · [Release assets](https://github.com/murdavs/StereoShutter/releases/latest)
 
@@ -7,7 +7,13 @@ stereoscopic fixes, configuring supported 3D outputs and opening StereoShutter P
 Its complete ZIP includes Public StereoShutter RC20 (0.18.111.220) and the updated ES/EN manuals.
 The separate standalone bundle remains 0.18.111.209, including Player and Photos.
 
-## What changed in 0.1.125
+## What changed in 0.1.126
+
+- Fixed DX9 fix reinstallation for games including Alan Wake.
+- Fixed a detection issue that could disable the Play button for a working DX9 fix in Resident Evil 6.
+- Improved support log collection for DX9, geo-11 and DX12, including logs created manually.
+
+## Previous release: 0.1.125
 
 - Improve DX9 game detection and fix installation.
 - Update StereoShutter independently while preserving game settings and output.
